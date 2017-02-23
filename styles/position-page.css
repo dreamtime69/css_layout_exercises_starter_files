@@ -1,1 +1,69 @@
+html {
+	box-sizing: border-box;
+	font-size: 12pt;
+}
 
+nav {
+	position: fixed;
+	top:0em;
+	background-color: grey;
+	height: 3.5em;
+	width: 100%;
+}
+
+ul {
+	position: fixed;
+	left:8em;
+	top: .2em;
+	text-align: left;
+}
+
+li {
+	display:inline;
+}
+
+li::after {
+	content: " |";
+}
+
+.navkitty {
+	display: block;
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+	border: 1px solid black;
+	margin-top: .2em;
+	margin-left:5em;
+}
+
+body {
+	background-size: cover;
+	background-image: url('../images/outerspace_landscape.jpeg');
+}
+
+.greenbox {
+ 	/*position: relative;*/
+ /*WHY is my navbar and photo inheriting their margin top from this class?!?!?*/
+ 	margin-top: 15em;
+ 	height: 300px;
+ 	width: 600px;
+ 	border: dotted 20px green;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ }
+
+.space {
+	height: 200px;
+	width: 200px;
+}
+.cat {
+	position: relative;
+	top: -100px;
+	left: -100px;
+}
+
+.dog {
+	position: relative;
+	bottom: -200px;
+	right: -250px;
+}
